@@ -1,8 +1,12 @@
 ﻿#include <iostream>
 #include "GL/glut.h";
-#include "GL/glew.h";
-#include "GL/freeglut.h";
+//include "GL/glew.h";
+//include "GL/freeglut.h";
 
+void RenderSceneOB() {
+	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glutSwapBuffers();
+}
 int main(int argc, char **argv)
 {
 	glutInit(&argc, argv);
@@ -11,10 +15,6 @@ int main(int argc, char **argv)
 	glutInitWindowPosition(100, 100);
 	glutCreateWindow("Tutorial 01");
 	glutDisplayFunc(RenderSceneOB);
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glutMainLoop();
-
-}
-void RenderSceneOB() {
 
 }

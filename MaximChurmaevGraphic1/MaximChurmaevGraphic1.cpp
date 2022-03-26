@@ -10,4 +10,11 @@ int main(int argc, char **argv)
 	glutInitWindowSize(1024, 768);
 	glutInitWindowPosition(100, 100);
 	glutCreateWindow("Tutorial 01");
+	glutDisplayFunc(RenderSceneOB);
+	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glutMainLoop();
+
+}
+void RenderSceneOB() {
+
 }
